@@ -1,1 +1,16 @@
+.text {
 
+  width:max-content;
+  margin: 200px auto;
+  font-size:50px;
+
+  
+}
+
+.link {
+  text-decoration:: none;
+  border-bottom: dashed 2px black;
+  padding: 3px;
+
+
+}
