@@ -15,7 +15,7 @@ body {
 
 .text {
   margin: 200px auto;
-  width:50vw;
+  width:max-content;
 
   font-size:20px;
   background:transparent;
