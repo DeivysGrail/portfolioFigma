@@ -11,6 +11,7 @@ body {
 .text {
 
   width:max-content;
+  width: minmax(max-content, 50vw);
   margin: 200px auto;
   font-size:20px;
   background:transparent;
