@@ -15,6 +15,7 @@ body {
   font-size:20px;
   font-family: "Montserrat";
   display:block;
+  box-shadow : -1px -1px 0 white;
 
   
 }
@@ -22,7 +23,6 @@ body {
 .link {
   color: lightblue;
   text-decoration:: none;
-  border: dashed 2px white;
   padding: 3px 5px;
 
 
