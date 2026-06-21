@@ -23,9 +23,12 @@ body {
   
 }
 
-.link, .link:visited {
+.link {
   color: white;
   text-decoration:: none;
   padding: 3px 5px;
 }
 
+a:visited {
+text-decoration:: none;
+}
