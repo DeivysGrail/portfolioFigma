@@ -16,7 +16,7 @@ body {
   font-family: "Montserrat";
   display:block;
   border: none;
-  box-shadow : -1px -1px 0 white;
+  box-shadow : -3px -3px 0 white, 3px 3px 0 rgba(0,0,0,0.7);
   padding:15px;
 
   
