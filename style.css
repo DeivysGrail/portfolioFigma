@@ -15,8 +15,8 @@ body {
 
 .text {
   margin: 200px auto;
-  width:400px;
-  height:200px;
+  width:300px;
+  height:100px;
   font-family: "Montserrat";
   display:block;
   border: none;
@@ -48,4 +48,21 @@ button {
 
 a:visited {
 text-decoration: none;
+}
+
+@media-queries ( max-width < 1200px) {
+
+  .text {
+
+    width: 200px;
+    height: 80px;
+
+
+    
+  }
+
+
+
+
+  
 }
