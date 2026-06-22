@@ -17,7 +17,6 @@ body {
   margin: 200px auto;
   width:400px;
   height:200px;
-  font-size:40px;
   font-family: "Montserrat";
   display:block;
   border: none;
@@ -41,6 +40,7 @@ button {
   transition: ease-out .1s 
 }
 .link {
+  font-size:40px;
   color: white;
   text-decoration: none;
   padding: 3px 5px;
