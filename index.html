@@ -1,20 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Redirection portfolio Figma</title>
-  <script src="./script.js" type="defer"></script>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#c9c9c9;
+            font-family:"Montserrat", sans-serif;
+            padding:2rem;
+        }
+
+        .portfolio-btn{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            width:min(90vw, 420px);
+            min-height:120px;
+
+            padding:2rem;
+
+            text-decoration:none;
+            text-align:center;
+            color:#fff;
+            font-size:clamp(1.8rem, 5vw, 3rem);
+            font-weight:500;
+
+            background:#c9c9c9;
+
+            border-radius:8px;
+
+            box-shadow:
+                -8px -8px 16px rgba(255,255,255,.7),
+                 8px 8px 16px rgba(0,0,0,.18);
+
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+        }
+
+        .portfolio-btn:hover{
+            transform:translateY(-4px);
+
+            box-shadow:
+                -12px -12px 22px rgba(255,255,255,.75),
+                 12px 12px 22px rgba(0,0,0,.22);
+        }
+
+        .portfolio-btn:active{
+            transform:translateY(0);
+
+            box-shadow:
+                inset -5px -5px 10px rgba(255,255,255,.65),
+                inset 5px 5px 10px rgba(0,0,0,.15);
+        }
+
+        /* Mobile */
+
+        @media (max-width:600px){
+
+            body{
+                padding:1rem;
+            }
+
+            .portfolio-btn{
+                width:100%;
+                min-height:160px;
+                font-size:2.3rem;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-  <div class="text" id="divLink" onclick="window.open('https://www.figma.com/proto/VGIeXCOyGLEANv5VcUZvGO/Portfolio-UX?page-id=0%3A1&node-id=98-264&viewport=-553%2C933%2C0.19&t=lxrL55vhUaQDs5h')">
-<button >
-<a class="link" href="https://www.figma.com/proto/VGIeXCOyGLEANv5VcUZvGO/Portfolio-UX?page-id=0%3A1&node-id=98-264&viewport=-553%2C933%2C0.19&t=lxrL55vhUaQDs5h">Voir le portfolio</a>
-</button>
-    </div>
-</body>
 
+    <a
+        class="portfolio-btn"
+        href="https://www.figma.com/proto/VGIeXCOyGLEANv5VcUZvGO/Portfolio-UX?page-id=0%3A1&node-id=98-264&viewport=-553%2C933%2C0.19&t=lxrL55vhUaQDs5h"
+        target="_blank"
+        rel="noopener noreferrer">
+        Voir le<br>portfolio
+    </a>
+
+</body>
 </html>
