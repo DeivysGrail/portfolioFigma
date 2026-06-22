@@ -28,6 +28,8 @@ body {
 
 button {
   background:transparent;
+  outline:none;
+  border:none;
 }
 
 .text:hover {
