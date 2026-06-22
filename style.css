@@ -50,7 +50,7 @@ a:visited {
 text-decoration: none;
 }
 
-@media-queries ( max-width < 1200px) {
+@media( max-width < 1200px) {
 
   .text {
 
