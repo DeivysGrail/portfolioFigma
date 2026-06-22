@@ -1,103 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<title>Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
-        body{
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:#c9c9c9;
-            font-family:"Montserrat", sans-serif;
-            padding:2rem;
-        }
+<style>
 
-        .portfolio-btn{
-            display:flex;
-            justify-content:center;
-            align-items:center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-            width:min(90vw, 420px);
-            min-height:120px;
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#C9C9C9;
+    font-family:"Montserrat",sans-serif;
+    padding:20px;
+}
 
-            padding:2rem;
+/* ---------- Bouton ---------- */
 
-            text-decoration:none;
-            text-align:center;
-            color:#fff;
-            font-size:clamp(1.8rem, 5vw, 3rem);
-            font-weight:500;
+.portfolio-btn{
 
-            background:#c9c9c9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-            border-radius:8px;
+    width:min(90vw,420px);
+    min-height:130px;
 
-            box-shadow:
-                -8px -8px 16px rgba(255,255,255,.7),
-                 8px 8px 16px rgba(0,0,0,.18);
+    padding:30px;
 
-            transition:
-                transform .25s ease,
-                box-shadow .25s ease;
-        }
+    background:#C9C9C9;
+    color:white;
+    text-decoration:none;
+    text-align:center;
 
-        .portfolio-btn:hover{
-            transform:translateY(-4px);
+    font-size:clamp(2rem,5vw,3rem);
+    font-weight:500;
+    line-height:1.1;
 
-            box-shadow:
-                -12px -12px 22px rgba(255,255,255,.75),
-                 12px 12px 22px rgba(0,0,0,.22);
-        }
+    border-radius:8px;
 
-        .portfolio-btn:active{
-            transform:translateY(0);
+    box-shadow:
+        -8px -8px 16px rgba(255,255,255,.75),
+         8px 8px 16px rgba(0,0,0,.18);
 
-            box-shadow:
-                inset -5px -5px 10px rgba(255,255,255,.65),
-                inset 5px 5px 10px rgba(0,0,0,.15);
-        }
+    cursor:pointer;
 
-        /* Mobile */
+    user-select:none;
+    -webkit-tap-highlight-color:transparent;
+    will-change:transform;
 
-        @media (max-width:600px){
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease;
+}
 
-            body{
-                padding:1rem;
-            }
+/* Hover */
 
-            .portfolio-btn{
-                width:100%;
-                min-height:160px;
-                font-size:2.3rem;
-            }
+.portfolio-btn:hover{
 
-        }
-    </style>
+    transform:translateY(-4px);
+
+    box-shadow:
+        -12px -12px 22px rgba(255,255,255,.8),
+         12px 12px 22px rgba(0,0,0,.22);
+
+}
+
+/* Clic */
+
+.portfolio-btn:active{
+
+    transform:scale(.98);
+
+    box-shadow:
+        inset -6px -6px 12px rgba(255,255,255,.7),
+        inset 6px 6px 12px rgba(0,0,0,.18);
+
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+    .portfolio-btn{
+
+        width:100%;
+        min-height:180px;
+
+        font-size:2.4rem;
+
+    }
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <a
-        class="portfolio-btn"
-        href="https://www.figma.com/proto/VGIeXCOyGLEANv5VcUZvGO/Portfolio-UX?page-id=0%3A1&node-id=98-264&viewport=-553%2C933%2C0.19&t=lxrL55vhUaQDs5h"
-        target="_blank"
-        rel="noopener noreferrer">
-        Voir le<br>portfolio
-    </a>
+<a class="portfolio-btn"
+href="https://www.figma.com/proto/VGIeXCOyGLEANv5VcUZvGO/Portfolio-UX?page-id=0%3A1&node-id=98-264&viewport=-553%2C933%2C0.19&t=lxrL55vhUaQDs5h"
+target="_blank"
+rel="noopener noreferrer">
+
+Voir le<br>portfolio
+
+</a>
 
 </body>
 </html>
