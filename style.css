@@ -50,10 +50,10 @@ a:visited {
 text-decoration: none;
 }
 
-@media( max-width < 1200px) {
+@media( max-width : 1200px) {
 
   .text {
-
+    background:red;
     width: 200px;
     height: 80px;
 
